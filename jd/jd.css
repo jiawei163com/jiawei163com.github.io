@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #999;
+}
+/*清除浮动*/
+.clearfix::after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  justify-content: space-between;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #c82316;
+}
+header .logo {
+  display: block;
+  width: 70px;
+  height: 100%;
+  background: url("images/jd-sprites.png") no-repeat;
+  background-position: 3px -120px;
+  background-size: 226px 226px;
+  float: left;
+}
+header .logo h1 {
+  font-size: 0;
+}
+header div {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+header div input {
+  padding-left: 40px;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  position: relative;
+}
+header div::after {
+  display: block;
+  content: ".";
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background: url("images/jd-sprites.png") no-repeat;
+  top: 6px;
+  left: 77px;
+  background-size: 228px 228px;
+  background-position: -65px -120px;
+}
+header .login {
+  display: block;
+  width: 50px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  line-height: 40px;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+}
+.main {
+  width: 100%;
+}
+.main .slider ul li a {
+  display: block;
+}
+.main .slider ul li a img {
+  width: 100%;
+}
+.main .shortnav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .shortnav a {
+  width: 25%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main .shortnav a img {
+  display: block;
+  margin: 0 auto;
+  width: 42%;
+}
+.main .shortnav a span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .otk {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+}
+.main .otk .title {
+  padding-left: 20px;
+  padding-top: 3px;
+  height: 25px;
+}
+.main .otk .title > span {
+  padding-left: 30px;
+  display: block;
+  color: #c81623;
+  line-height: 25px;
+  margin-right: 20px;
+}
+.main .otk .title .click {
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #3a3a3a;
+  color: #fff;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.main .otk .title a {
+  padding-right: 5px;
+}
+.main .otk .content {
+  display: flex;
+}
+.main .otk .content .item {
+  flex: 1;
+}
+.main .otk .content .item img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.main .otk .content .item span {
+  color: #c81623;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .otk .content .item del {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .acts {
+  display: flex;
+  background: url("uploads/banner_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.main .acts a {
+  flex: 1;
+  margin-top: 30%;
+  margin-bottom: 10px;
+}
+.main .acts a img {
+  width: 100%;
+}
+.main .acts > div {
+  flex: 1;
+  margin-top: 30%;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+.main .acts > div a {
+  margin: 0;
+}
+.main .acts > div a img {
+  flex: 1;
+  height: 100%;
+}
+.main .act1 div:first-child {
+  display: flex;
+}
+.main .act1 div:first-child a {
+  flex: 1;
+}
+.main .act1 div:first-child a img {
+  width: 100%;
+}
+.main .act1 div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .act1 div:last-child a {
+  width: 50%;
+}
+.main .act1 div:last-child a img {
+  width: 100%;
+}
+.main .slider2 ul li a {
+  display: block;
+}
+.main .slider2 ul li a img {
+  width: 100%;
+}
+.main .mart span,
+.main .theme span {
+  display: block;
+  color: #c81623;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.main .mart a,
+.main .theme a {
+  width: 50%;
+}
+.main .mart a img,
+.main .theme a img {
+  width: 100%;
+}
+.main .theme .sm {
+  width: 25%;
+}
+.main .recommand span {
+  display: block;
+  color: #c81623;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.main .recommand a {
+  display: block;
+  width: 40%;
+}
+.main .recommand a img {
+  width: 100%;
+}
+.main .recommand .sm {
+  width: 30%;
+}
+.main .gyl > .clearfix {
+  color: #c81623;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.main .gyl > .clearfix a {
+  font-size: 12px;
+  font-weight: normal;
+}
+.main .gyl .t1tle span:first-child {
+  color: #c81623;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.main .gyl .t1tle a {
+  font-size: 12px;
+  line-height: 24px;
+  color: #c81623;
+}
+.main .gyl .item {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  width: 50%;
+}
+.main .gyl .item a {
+  width: 100%
+                display: block;
+}
+.main .gyl .item a img {
+  width: 100%;
+}
+.main .gyl .item a span {
+  display: block;
+}
+.title::after {
+  display: block;
+  content: ".";
+  font-size: 0;
+  height: 25px;
+  width: 25px;
+  background: url("images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -80px -108px;
+  position: absolute;
+}
