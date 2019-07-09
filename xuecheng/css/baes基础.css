@@ -1,0 +1,56 @@
+/* 页面初始化，样式初始化 */
+
+/* 初始化内外边距 */
+*{
+	padding:0;
+	margin: 0;
+}
+
+/*设置版心类*/
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*清除浮动的样式*/
+.clearfix::after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* 初始化列表样式 */
+ul,
+li,
+ol,
+dl{
+	list-style:none;/* 标签初始化 */
+}
+
+a{
+	text-decoration:none;/* 初始化a标签的样式 */
+	color:#050505;
+}
+
+/* 初始化表单和外轮廓线 */
+input{
+	border:none;
+	outline:none;
+}
+
+/* em初始化 */
+em{
+	font-style:normal;
+}
+
+/* h标签初始化 */
+h1,h2,h3,h4,h5,h6,strong{
+	font-weight:normal;
+
+}

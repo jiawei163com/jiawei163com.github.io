@@ -1,0 +1,490 @@
+首页样式 */
+
+body{
+	background:#f3f5f7;/* 设置整个页面的背景颜色 */
+}
+
+/* 公共样式 */
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.w{
+	width: 1200px;
+	margin:auto;
+}
+
+
+
+/* 头部样式部分开始 */
+header{
+	width: 1200px; /* 整个头部宽度 */
+	height: 70px; /* 整个头部高度 */
+	/* background: pink; */
+	margin:0 auto; /* 设置标题头部居中 */
+	padding-top:30px;/* 整体内边距30px */
+}
+header .logo{
+	/* width: 200px;
+	height: 100px; */
+	/* background: blue; */
+}
+.logo h1 a{
+	display:block;/* 讲a标签转换成块级元素 */
+	width: 200px;
+	height:41px;
+	background:url('../imags/logo.png') no-repeat;/* 学成在线logo，不平铺 */
+	/* font-size: 0; */
+	text-indent: -9999em;
+}
+
+
+header .nav{
+	/* width: 300px;
+	height: 100px;
+	background: yellow; */
+	margin-left: 70px;
+	margin-right:61px;
+}
+.nav ul li{
+	float:left;
+	margin-right:28px;
+}
+.nav li a{
+	display:block;
+	padding:0 8px;
+	height:40px;
+	line-height: 40px;
+	font-size: 18px;
+}
+.nav li a:hover{
+	/* text-decoration:underline; */
+	border-bottom: 2px solid #0094ff;
+}
+
+
+header .search{
+	/* width: 400px;
+	height: 100px;
+	background:orange ; */
+	width: 410px;
+	height: 38px;
+	border:1px solid #0094ff;
+	border-right:none;/* 右边框初始化 */
+	margin-right:30px;
+}
+
+.search input[type="text"]{
+	width: 360px;
+	height: 38px;
+	float:left;/* 浮动，这样就没有间距了 */
+	/* padding-right: 18px;这样会把框挤大 */
+	text-indent: 18px;/* 首行缩进18px，这样就不会把框挤大 */
+}
+
+
+header .userinfo{
+	/* width: 300px;
+	height: 100px;
+	background: red; */
+
+}
+.userinfo img{
+	border-radius:50%;
+/* 设置图片的垂直对齐方式 */
+vertical-align: middle;
+margin-right:6px;
+}
+
+
+.userinfo a{
+	color:#7e7e7f;
+	font-size:12px;
+}
+/* 头部样式部分结束 */
+
+
+
+
+
+/* 导航栏部分开始 */
+
+/* 左边部分开始 */
+nav{
+	background: #1c036c;
+	/* height: 500px; */
+}
+nav .bg{
+	background:url('../imags/banner2.png');
+	height:420px;
+}
+nav .class-right{
+	background:#14024b;
+	background-color:rgba(0,0,0,0.3);
+	width: 190px;
+}
+
+nav .class-right ul{
+	padding:12px 20px;
+}
+nav .class-right li{
+	height: 44px;
+	line-height: 44px;
+}
+nav .class-right li a{
+	font-size: 14px;
+	color:#fff;
+}
+nav .class-right li a:hover{
+	color:#00b4ff;
+}
+/* 左边部分结束 */
+
+
+/* 右边部分开始 */
+
+nav .class-left{
+	width: 252px;
+	border:1px solid #eaeaea;
+	margin-top: 50px;
+	/* margin-bottom: 50px; */
+}
+nav .class-left h4{
+	height:48px;
+	line-height:48px;
+	text-align: center;
+	font-weight:normal;
+	color:#fff;
+	font-size:20px;
+	background: #9bceea;
+}
+
+nav .class-xia ul{
+	height: 290px;
+	padding:0 20px;
+	background: #fff;
+	padding-top: 8px;
+}
+nav .class-xia ul li{
+	height:44px;
+	/* line-height: 64px; */
+	border-bottom:1px solid #eaeaea;
+	padding:16px 0;
+}
+nav .class-xia ul li a h5{
+	font-size:16px;
+	color:#5a5a5a;
+	display: inline;
+}
+nav .class-xia ul li a em{
+	font-size:14px;
+	color:#4e4e4e;
+	font-style:none;
+}
+nav .class-xia ul li a span{
+	color:#a5a5a5;
+	font-size:12px;
+}
+nav .class-xia ul li a:hover h5,
+nav .class-xia ul li a:hover em,
+nav .class-xia ul li a:hover span{
+	color:#00a4ff;
+}
+nav .class-xia ul>a{
+	display:block;
+	color:#22b0ff;
+	font-size:18px;
+	width: 186px;
+	height: 38px;
+	line-height:38px;
+	text-align:center;
+	border:1px solid #22b0ff;
+	margin:10px;
+}
+
+nav .class-xia ul>a:hover{
+	color:#fff;
+	background:#22b0ff;
+}
+
+/* 右边部分结束 */
+
+/* 导航栏部分结束 */
+
+
+
+
+/*精品推荐样式部分开始*/
+/* .jingpingneirong .details div:nth-child(5n){
+	margin-right:0;
+} */
+
+
+/*精品推荐样式列表部分开始*/
+.subject{
+	background:#f3f5f7;
+	/* height: 1000px; */
+}
+.recom {
+  /*height: 100px;*/
+  background: #fff;
+  margin-top: 8px;
+  margin-bottom:34px;
+  padding: 20px 0;
+}
+.recom ul li {
+  float: left;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.recom ul li a {
+  color: #050505;
+}
+.recom ul li:first-child {
+  margin-left: 34px;
+}
+.recom ul li.line {
+  width: 1px;
+  height: 16px;
+  background: #bfbfbf;
+  /*background: red;*/
+  margin: 4px 34px;
+}
+.recom>a {
+  margin-right: 34px;
+  color: #00a4ff;
+  font-size: 12px;
+}
+/*精品推荐样式列表部分结束*/
+
+
+/* 定位部分样式开始 */
+div .subject{
+	position:relative;
+}
+
+.subject .position{
+	width: 130px;
+	padding:12px 0 12px 26px;
+	background:#ffffff;
+	position:absolute;
+	top:936px;
+	left:-12px;
+}
+.subject .position ul li{
+	font-size:14px;
+	color:#000000;
+	height:38px;
+	line-height:38px;
+}
+.subject .position ul li a:hover{
+	color:#00a4ff;
+}
+/* 定位部分样式结束 */
+
+
+/* 精品推荐内容部分开始 */
+div .jingpingneirong{
+	margin-bottom:25px;
+}
+div .content .details .box-nei>img{ /* 小图标定位 */
+	position:absolute;
+	top:4px;
+	right:-4px;
+}
+div .content p,
+.programme ul li strong{/* 编程入门部分样式 */
+	font-size:20px;
+	color:#494949;
+	margin-bottom:20px;
+}
+div .content p>a{
+	color:#a5a5a5;
+	font-size:12px;
+	padding-right:27px;
+}
+div .content .details .box-nei{
+	/* width: 1200px; */
+	margin-right:12px;
+}
+div .content .details .box-nei,
+.programme .programme-info .box-nei{ /* 这里编程入门的样式 */
+	width: 228px;
+	margin-bottom:15px;
+	position:relative;
+}
+div .content .details .box-nei a img,
+.programme .programme-info .box-nei a img{
+	width:100%;
+}
+div .content .details div ul,
+.programme .programme-info .box-nei ul{
+	background:#fff;
+	padding:14px;
+}
+div .content .details div ul li,
+.programme .programme-info .box-nei ul li{
+	color:#999999;
+	font-size:12px;
+	margin-bottom:20px;
+}
+div .content .details div ul li em,
+.programme .programme-info .box-nei ul li em{
+	font-size:14px;
+	color:#ff7c2d;
+}
+div .content .details div ul li a,
+.programme .programme-info .box-nei ul li a{
+	font-size:14px;
+	color:#050505;
+
+}
+div .content .details div ul li a:hover,
+.programme .programme-info .box-nei ul li a:hover{/* 编程入门样式到这结束 */
+	color:#00a4ff;
+	text-decoration:underline;
+}
+/* 精品推荐内容部分结束 */
+div .jingpingneirong .content .details .Edge-spacing,
+.programme .programme-info .Edge-spacing{/* 右边距设为0了还是没用 */
+	margin-right:0px;
+	/* float:right; */
+}
+
+
+
+
+
+/* 编程入门部分样式开始 */
+.programme .programme-in ul{
+	height:42px;
+}
+.programme .programme-in ul li{
+	float:left;
+	font-size:17px;	
+}
+.programme .programme-in ul li strong{
+	margin-right: 317px;
+}
+.programme .programme-in ul li a{
+	color:#868686;
+	padding:35px;
+}
+.programme .programme-in ul .lanse{
+	color:#00a4ff;
+}
+.programme .programme-in ul .zuiyoubian{
+	color:#a5a5a5;
+	font-size:12px;
+	padding-right:27px;
+}
+
+
+.programme .programme-info1{
+	margin-right:14px;
+}
+/* .programme .programme-info .box-nei{
+	width: 228px;
+}
+.programme .programme-info .box-nei a img{
+	width:100%;
+}
+.programme .programme-info .box-nei ul{
+background:#fff;
+	padding:14px;
+} */
+.programme .programme-info .box-nei{
+	margin-right:11px;
+	margin-top:8px;
+}
+.programme .programme-info1{
+	margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 编程入门部分样式结束 */
+
+/*精品推荐样式部分结束*/
+
+
+
+
+
+/* 尾部样式开始 */
+.boxfoot{
+	/* width: 1200px; */
+	padding-top: 34px;
+	margin:auto;
+	/* background-color:pink; */
+	/* margin-right: 220px; */
+}
+.box-left{
+
+}
+.foot h2 a{
+	display: block;
+	background: url('../imags/logo.png') no-repeat;
+	font-size: 0;
+	width: 200px;
+	height: 66px;
+}
+div .foot p{
+	font-size: 14px;
+	color:#666666;
+	height:20px;
+}
+.foot .APP{
+	display:block;
+	width: 118px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border:1px solid #00a4ff;
+	font-size: 16px;
+	color:#00a4ff;
+	font-size: 16px;
+	margin-top: 8px;
+}
+.foot .APP:hover{
+	color:#ffffff;
+	background: #00a4ff;
+}
+
+
+.box-right dl{
+	display: inline;
+	float:left;
+	margin:0 60px;
+}
+.box-right dl:last-child{
+	margin-right: 0;
+	width:94px;
+
+}
+
+.box-right dl dt{
+	width: 96px;
+	height:34px;
+	font-size:18px;
+	color:#494949;
+
+}
+
+.box-right dl dd{
+	height:24px;
+	/* line-height: 34px; */
+	color:#333;
+	font-size:14px;
+}
+
+/* 尾部样式结束 */
